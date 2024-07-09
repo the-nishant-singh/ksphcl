@@ -1,0 +1,22 @@
+.Typography {
+  color: #000000;
+  text-transform: capitalize;
+  opacity: 1;
+  font-weight: bold;
+}
+
+.t14 {
+  font-size: 0.87vw;
+}
+
+.t16 {
+  font-size: 1vw;
+}
+
+.Subtext {
+  letter-spacing: 0px;
+  color: #818e94;
+  text-transform: capitalize;
+  opacity: 1;
+  font-size: 0.72vw;
+}

@@ -1,0 +1,67 @@
+.Container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.CalendarIcon {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 0.417vw;
+    color: var(--gray-900)
+}
+
+.DateContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F4F7FA;
+    border: 1px solid #DEE4EB;
+    border-radius: 0.417vw;
+    padding-left: 0.625vw;
+    width: 100%;
+    height: 2.5vw;
+}
+
+.Small {
+    height: 2vw !important;
+}
+
+.Date {
+    font-weight: 600;
+    font-size: 0.833vw;
+    color: var(--gray-900)
+}
+
+.CalendarPopUp select:hover {
+    background-color: transparent !important;
+}
+
+.CalendarPopUp select option {
+    background-color: transparent;
+    text-align: center;
+}
+
+.CalendarPopUp select {
+    border-radius: 0.417vw;
+}
+
+.ArrowButton {
+    background: var(--color-primary);
+    border-radius: 0.3vw;
+    width: 2vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2vw;
+    cursor: pointer;
+}
+
+.DatePickerContainer {
+    display: flex;
+    align-items: center;
+    grid-column-gap: 0.51vw;
+}

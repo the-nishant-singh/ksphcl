@@ -1,0 +1,34 @@
+.ParentWrapper {
+    display: flex;
+    border: 1px solid var(--gray-200);
+    border-radius: 8px;
+    background: var(--gray-50) 0% 0% no-repeat padding-box !important;
+    font-size: 0.95vw;
+    outline: none;
+    align-items: center;
+    padding: 0.1vw 0;
+    padding-right: 0;
+    height: 2.3vw;
+    width: -webkit-fill-available;
+    ;
+}
+
+.Input {
+    font-size: 0.95vw;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    border: none;
+}
+
+.InputWrapper {
+    flex-grow: 2;
+}
+
+.DropdownComponent {
+    font-size: 0.95vw;
+    height: 2.3vw;
+    background: var(--color-secondary) 0% 0% no-repeat padding-box !important;
+    padding: 0.1vw 2.2vw;
+    border-radius: 8px;
+}

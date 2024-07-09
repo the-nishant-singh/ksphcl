@@ -1,0 +1,39 @@
+.MultiValueRemove {
+    width: 1.042vw;
+    height: 1.042vw;
+    display: flex;
+    align-items: center
+}
+
+.ContentWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.DropdownComponent {
+    font-size: 0.95vw;
+    height: 2.3vw;
+    background: #F4F7FA 0% 0% no-repeat padding-box !important;
+    padding: 0.1vw 2.2vw;
+    border-radius: 0.417vw;
+}
+
+.InputIconWrapper {
+    position: relative;
+}
+
+.InputContainer {
+    height: 100%;
+}
+
+.LeftIconWrapper {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 0.3vw;
+    z-index: 1;
+    color: hsl(0, 0%, 50%);
+}

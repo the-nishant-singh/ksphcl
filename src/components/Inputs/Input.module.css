@@ -1,0 +1,253 @@
+.Label {
+  font-size: 1.02vw;
+  font-weight: 500;
+}
+
+.InputContainer {
+  height: 100%;
+}
+
+.InputContainer input {
+  margin-top: 1vw;
+  font-size: 0.95vw;
+  height: 2.3vw;
+  outline: none;
+  background: #F4F7FA 0% 0% no-repeat padding-box !important;
+  border: 1px solid #DEE4EB !important;
+  border-radius: 8px;
+  padding: 0.1vw 0.9vw;
+  width: -webkit-fill-available;
+}
+
+.InputContainerDisable input {
+  background: #F4F7FA 0% 0% no-repeat padding-box !important;
+  opacity: 0.5;
+  color: #1B1D21
+}
+
+.InputPlaceholder::placeholder {
+  color: #6A7682 !important;
+}
+
+.InputIconWrapper {
+  position: relative;
+}
+
+.LeftIconWrapper {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 0.3vw;
+}
+
+.RightIconWrapper {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 0.3vw;
+  right: 0;
+}
+
+.PhoneInput {
+  cursor: pointer;
+  position: relative;
+}
+
+.PhoneInput input {
+  width: 32vw;
+  padding-left: 3.6vw;
+}
+
+.TextArea {
+  height: inherit;
+}
+
+.TextArea>textarea {
+  font-size: 0.9rem;
+  width: -webkit-fill-available;
+  height: 4vw;
+  outline: none;
+  background: #F4F7FA;
+  border: 1px solid #DEE4EB;
+  border-radius: 0.5rem;
+  padding-left: 0.8rem;
+  padding-right: 0.7rem;
+  padding-top: 1rem;
+  resize: none;
+  color: var(--gray-900);
+  font-weight: 600;
+  line-height: 1.3rem
+}
+
+.TextAreaLarge {
+  height: 8rem !important;
+  font-size: 1rem !important;
+}
+
+.PasswordContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.PasswordContainer i {
+  position: absolute;
+  right: 0.5vw;
+  margin-top: 0.8vw;
+  cursor: pointer;
+}
+
+.RadioButtons .radioItem label {
+  color: #000000;
+  font-size: 0.72vw;
+  font-weight: normal;
+}
+
+.RadioButtons .radioItem {
+  display: flex;
+  gap: 0.3vw;
+  align-items: center;
+}
+
+.RadioButtons {
+  display: flex;
+  gap: 1vw;
+}
+
+input[type="radio"] {
+  appearance: none;
+  background-color: transparent;
+  margin: 0;
+  color: var(--color-primary);
+  width: 1.3vw;
+  height: 1.3vw;
+  border: 0.15vw solid var(--color-primary);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  border: 0.4vw solid var(--color-primary);
+  border-radius: 50%;
+}
+
+.Dropdown {
+  cursor: pointer;
+}
+
+.Dropdown ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1;
+  /* Firefox */
+}
+
+.Dropdown :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: black;
+}
+
+.Dropdown ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: black;
+}
+
+.Switch {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 18px;
+}
+
+.Switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.Slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.Slider:before {
+  position: absolute;
+  content: '';
+  height: 14px;
+  width: 14px;
+  left: 4px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.ToggleButton input:checked+.Slider {
+  background-color: var(--color-primary);
+}
+
+.ToggleButton input:focus+.Slider {
+  box-shadow: 0 0 1px var(--color-primary);
+}
+
+.ToggleButton input:checked+.Slider:before {
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+}
+
+/* Rounded sliders */
+.Slider {
+  border-radius: 34px;
+}
+
+.Slider:before {
+  border-radius: 50%;
+}
+
+.ToggleButton {
+  font-size: 0.72vw;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+  .Label {
+    font-size: 3.2vw;
+  }
+
+  .InputContainer input {
+    height: 11vw;
+    width: 80vw !important;
+    font-size: 2.8vw;
+  }
+
+  .TextArea>textarea {
+    width: 80vw !important;
+    height: 25vw;
+  }
+
+  .PhoneInput input {
+    width: 69vw !important;
+    padding-left: 14vw;
+  }
+
+  .CountryCode {
+    border-radius: 2.13vw;
+    height: 8.8vw;
+    width: 11.2vw;
+    font-size: 3.5vw;
+    top: 1vw;
+    left: 1vw;
+  }
+}

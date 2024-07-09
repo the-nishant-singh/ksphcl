@@ -1,0 +1,57 @@
+.MainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 7.708vw;
+    background: #F4F7FA;
+    border: 0.052vw dashed #C3CCD6;
+    border-radius: 0.417vw;
+}
+
+.Text {
+    font-weight: 400 !important;
+    font-size: 0.833vw !important;
+    color: var(--gray-700) !important;
+    cursor: pointer;
+}
+
+.Browse {
+    font-weight: 600 !important;
+    border-bottom: 0.052vw solid var(--gray-700);
+}
+
+.SelectedFile {
+    width: 100%;
+    height: 3.542vw;
+    border: 0.052vw solid #DEE4EB;
+    border-radius: 0.417vw;
+    background: #FFFFFF;
+    margin-top: 0.260vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.SelectedFile p {
+    color: var(--gray-700) !important;
+    font-weight: 600 !important;
+    font-size: 0.833vw !important;
+    position: relative;
+    left: 0.885vw;
+}
+
+.PreviewImg {
+    position: relative;
+    border-radius: 0.417vw;
+    width: 2.292vw;
+    height: 2.292vw;
+    left: 0.521vw;
+}
+
+.CloseIcon {
+    position: relative;
+    right: 1vw;
+    top: 0.156vw;
+    cursor: "pointer"
+}

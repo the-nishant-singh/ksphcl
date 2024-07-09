@@ -1,0 +1,292 @@
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 2px #31313b;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+:root {
+  --color-primary: #2d38be;
+  --color-secondary: #F7F2FF;
+  --gray-50: #f4f7fa;
+  --gray-100: #eff2f5;
+  --gray-200: #dee4eb;
+  --gray-300: #c3ccd6;
+  --gray-400: #a8b5c2;
+  --gray-500: #8593a3;
+  --gray-600: #6a7682;
+  --gray-700: #505862;
+  --gray-800: #353b41;
+  --gray-900: #1b1d21;
+}
+
+.main-content {
+  min-height: 100vh;
+  background-color: #f4f7fc;
+  display: flex;
+}
+
+/* app css */
+.rounded-content-area {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 0.78vw;
+  padding: 1vw;
+}
+
+.table-count {
+  font-size: 0.72vw;
+  background: #f4f7fc 0% 0% no-repeat padding-box;
+  border-radius: 0.26vw;
+  padding: 0.5vw;
+  color: #9da7ab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5vw;
+}
+
+.content-header>div:first-child {
+  display: flex;
+  align-items: center;
+  grid-column-gap: 2vw;
+}
+
+.action-container {
+  display: flex;
+  gap: 1vw;
+  justify-content: center;
+  align-self: center;
+}
+
+/* app css */
+
+/* form classes */
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5vw;
+}
+
+.field-container {
+  display: block
+}
+
+.field-container-full-width {
+  width: 100%;
+}
+
+.field-container input,
+.field-container-full-width input {
+  margin-top: 0 !important;
+}
+
+.field-container label,
+.field-container-full-width label {
+  text-align: right;
+  font-size: 0.625vw;
+  letter-spacing: 0px;
+  color: #818e94;
+}
+
+.buttons-container {
+  justify-content: flex-end;
+  display: flex;
+  grid-column-gap: 1vw;
+  margin-top: 1vw;
+}
+
+.buttons-container>div {
+  width: 7.3vw;
+}
+
+.btn-primary {
+  border: transparent;
+  outline: none;
+  min-width: 7vw;
+  cursor: pointer;
+  background: var(--color-primary) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 10px #2f427e1a;
+  border-radius: 0.5vw;
+  height: 2vw;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.729vw;
+  color: #ffffff;
+  width: 100%;
+  border: 1px solid white;
+}
+
+.btn-secondary {
+  min-width: 7vw;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0px 2px 10px #2f427e1a;
+  border: 1px solid #818e94;
+  border-radius: 0.5vw;
+  height: 2vw;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.729vw;
+  color: #818e94;
+  margin-top: 1vw;
+  width: 100%;
+}
+
+.error-msg {
+  font-size: 0.71vw;
+  color: red;
+  margin-top: 0.3vw;
+}
+
+.tableCount {
+  font-size: 0.72vw;
+  background: #f4f7fc 0% 0% no-repeat padding-box;
+  border-radius: 0.26vw;
+  padding: 0.5vw;
+  color: #9da7ab;
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+}
+
+
+/* form classes */
+
+
+/* react tabs  */
+
+.react-tabs__tab {
+  height: 1.7vw !important;
+  min-width: 7.31vw !important;
+  box-shadow: 0px 2px 10px #2f427e1a !important;
+  border: 1px solid #818e94 !important;
+  border-radius: 0.5vw !important;
+  font-size: 1vw !important;
+  font-weight: 500 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #818e94 !important;
+}
+
+.react-tabs__tab--selected {
+  height: 1.7vw !important;
+  min-width: 7.31vw !important;
+  background: var(--color-primary) 0% 0% no-repeat padding-box !important;
+  box-shadow: 0px 2px 10px #2f427e1a !important;
+  border-radius: 0.5vw !important;
+  color: white !important;
+  font-size: 1vw !important;
+  font-weight: 500 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: white;
+}
+
+.react-tabs__tab-list {
+  border-bottom: none !important;
+  display: flex !important;
+  grid-column-gap: 1vw;
+}
+
+.react-tabs-background>div:first-child>ul:first-child {
+  padding: 1vw 1vw !important;
+  background: #ffffff 0% 0% no-repeat padding-box !important;
+  border-radius: 0.78vw !important;
+}
+
+/* react tabs  */
+
+
+/* toast  */
+
+.Toastify__toast {
+  border-radius: 15px !important;
+  min-height: unset !important;
+  width: 18.59vw !important;
+  padding: 1vw 1.5vw !important;
+}
+
+.Toastify__toast--success {
+  background: #14ae39 0% 0% no-repeat padding-box !important;
+  color: white !important;
+}
+
+.Toastify__toast--error {
+  background: #e74c3c 0% 0% no-repeat padding-box !important;
+  color: white !important;
+}
+
+.Toastify__toast-body {
+  font-size: 0.83vw !important;
+  font-family: "Poppins" !important;
+  font-weight: 500 !important;
+}
+
+.Toastify__close-button {
+  height: 1.92vw !important;
+  width: 2.1vw !important;
+  background: #ffffff !important;
+  outline: none !important;
+  border: none !important;
+  padding: 0 !important;
+  cursor: pointer !important;
+  transition: 0.3s ease !important;
+  align-self: flex-start !important;
+  border-radius: 0.5vw !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  opacity: 1 !important;
+}
+
+.Toastify__close-button--success {
+  color: #14ae39 !important;
+}
+
+.Toastify__close-button--error {
+  color: #e74c3c !important;
+}
+
+.Toastify__toast-container {
+  width: unset;
+}
+
+/* toast  */
+
+/* react modal */
+
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+  z-index: 11 !important;
+}
+
+.ReactModal__Content {
+  background: #ffffff 0% 0% no-repeat padding-box !important;
+  border-radius: 0.78vw !important;
+  border: none !important;
+  z-index: 12 !important;
+  overflow: hidden !important;
+}
+
+/* react modal */

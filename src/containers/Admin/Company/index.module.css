@@ -1,0 +1,8 @@
+.UploadedFileWrapper {
+    border: .052vw solid #dee4eb;
+    border-radius: .417vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}

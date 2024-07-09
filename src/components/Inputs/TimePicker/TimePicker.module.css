@@ -1,0 +1,12 @@
+.TimeContainer {
+    width: auto;
+    height: 2vw;
+    border: 1px solid #DEE4EB;
+    border-radius: 0.417vw;
+    background: #F4F7FA;
+}
+
+.Time {
+    height: 100%;
+    width: 100%;
+}

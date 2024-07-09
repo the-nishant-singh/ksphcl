@@ -1,0 +1,109 @@
+.NavBar {
+  background: linear-gradient(to right, #2e3abf, #7c00e3);
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 0 50px;
+  justify-content: space-between;
+}
+
+.NavBarTitle {
+  font-size: 1.4vw;
+  font-weight: 500;
+}
+
+.NavBarSubTitle {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.HomePageContainer {
+  padding: 0 15vw;
+}
+
+.BannerWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.BannerImage {
+  width: 100%;
+}
+
+.Home2 {
+  margin-top: 50px;
+}
+
+.CardWrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.Card {
+  width: 20%;
+  min-width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 -4px 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.CardImage {
+  display: flex;
+  justify-content: center;
+}
+
+.CardTitle {
+  margin-top: 1vw;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.CardSubTitle {
+  margin-top: 1vw;
+  font-size: 14px;
+}
+
+.CardButton {
+  margin-top: 1vw;
+}
+
+.TenderCount {
+  display: flex;
+  gap: 0.5vw;
+  margin: 0.5vw 0 1vw 0; 
+}
+
+.TenderItem {
+  /* margin-top: 0.5vw; */
+  display: flex;
+  gap: 0.5vw;
+  align-items: center;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.TenderItemDetails {
+  margin-bottom: 10px;
+  background-color: #5b66f5;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.TenderMap {
+  margin-top: 5vw;
+  display: flex;
+  justify-content: center;
+}
+
+.TenderDetails {
+  max-height: 70vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* .TenderItem span */
