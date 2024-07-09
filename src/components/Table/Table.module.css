@@ -98,3 +98,15 @@
 .Table tr:not(:last-child) {
   border-bottom: 0.052vw solid var(--gray-100);
 }
+
+@media screen and (max-width: 600px) {
+  .Table th {
+    padding: 10px 0;
+    font-size: 12px;
+  }
+
+  .Table tr {
+    font-size: 12px;
+    padding: 10px 0;
+  }
+}

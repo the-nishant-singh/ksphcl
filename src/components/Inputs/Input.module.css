@@ -251,3 +251,16 @@ input[type="radio"]:checked {
     left: 1vw;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .InputContainer input {
+    height: 11vw;
+    width: 100% !important;
+    font-size: 2.8vw;
+  }
+
+  .TextArea>textarea {
+    width: 100% !important;
+    height: 25vw;
+  }
+}

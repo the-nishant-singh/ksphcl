@@ -14,7 +14,7 @@
 
 :root {
   --color-primary: #2d38be;
-  --color-secondary: #F7F2FF;
+  --color-secondary: #f7f2ff;
   --gray-50: #f4f7fa;
   --gray-100: #eff2f5;
   --gray-200: #dee4eb;
@@ -58,7 +58,7 @@
   gap: 0.5vw;
 }
 
-.content-header>div:first-child {
+.content-header > div:first-child {
   display: flex;
   align-items: center;
   grid-column-gap: 2vw;
@@ -83,7 +83,7 @@
 }
 
 .field-container {
-  display: block
+  display: block;
 }
 
 .field-container-full-width {
@@ -110,7 +110,7 @@
   margin-top: 1vw;
 }
 
-.buttons-container>div {
+.buttons-container > div {
   width: 7.3vw;
 }
 
@@ -168,9 +168,7 @@
   gap: 0.5vw;
 }
 
-
 /* form classes */
-
 
 /* react tabs  */
 
@@ -209,14 +207,13 @@
   grid-column-gap: 1vw;
 }
 
-.react-tabs-background>div:first-child>ul:first-child {
+.react-tabs-background > div:first-child > ul:first-child {
   padding: 1vw 1vw !important;
   background: #ffffff 0% 0% no-repeat padding-box !important;
   border-radius: 0.78vw !important;
 }
 
 /* react tabs  */
-
 
 /* toast  */
 
@@ -290,3 +287,50 @@
 }
 
 /* react modal */
+
+@media screen and (max-width: 600px) {
+  .btn-primary {
+    height: auto;
+    /* width: 100%; */
+    min-width: 60px;
+    min-height: 28px;
+    font-size: 11px;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .react-tabs__tab {
+    font-size: 12px !important;
+    padding: 5px 12px !important;
+    border-radius: 5px !important;
+    height: auto !important;
+  }
+
+  .react-tabs-background > div:first-child > ul:first-child {
+    padding: 0 !important;
+  }
+
+  .tableCount {
+    font-size: 12px;
+    border-radius: 8px;
+    padding: 10px;
+    gap: 5px;
+  }
+
+  .field-container {
+    width: 100%;
+  }
+
+  .field-container label,
+  .field-container-full-width label {
+    font-size: 10px;
+  }
+
+  .buttons-container > div {
+    width: auto;
+  }
+
+  .ReactModal__Content {
+    border-radius: 8px !important;
+  }
+}
