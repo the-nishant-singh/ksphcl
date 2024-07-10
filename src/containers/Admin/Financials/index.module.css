@@ -1,0 +1,8 @@
+.GraphParent {
+    display: flex;
+    gap: 1vw;
+}
+
+.GraphChild {
+    flex-grow: 1;
+}

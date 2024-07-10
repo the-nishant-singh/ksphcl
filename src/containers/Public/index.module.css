@@ -134,6 +134,14 @@
     width: auto;
   }
 
+  .CardTitle {
+    font-size: 16px;
+  }
+
+  .CardSubTitle {
+    font-size: 12px;
+  }
+
   .Home2 {
     margin-top: 20px;
   }
