@@ -10,7 +10,15 @@ import Statistics from "../containers/Admin/Statistics";
 import Transactions from "../containers/Admin/Transaction";
 import Finanacials from "../containers/Admin/Financials";
 
-export const PROTECTED_ROUTES = [];
+export const PROTECTED_ROUTES = [
+  {
+    name: "Dashboard",
+    id: "dashboard",
+    url: "/dashboard",
+    component: Company,
+    icon: CompanyIcon,
+  },
+];
 
 export const PROTECTED_ROUTES_ADMIN = [
   {

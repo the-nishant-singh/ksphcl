@@ -1,11 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Typography from "../../../components/Typography/Typography";
 import Table from "../../../components/Table/Table";
 import ModalComponent from "../../../components/ModalComponent";
-import { UilInfoCircle } from "@iconscout/react-unicons";
+import {
+  UilInfoCircle,
+  UilCheckCircle,
+  UilTimesCircle,
+} from "@iconscout/react-unicons";
 import ContractDetails from "./ModalComponent/ContractDetails";
 import TabsComponent from "../../../components/Tabs/Tabs";
 import ContractProgress from "./ModalComponent/ContractProgress";
+import { AuthContext } from "../../../context/AuthContext";
 const tableData = [
   {
     sno: 1,
@@ -14,6 +19,7 @@ const tableData = [
     uptoDateExp: "5566456456",
     SiteHandOver: "25 Dec 2022",
     EstimateEndDate: "25 Dec 2022",
+    Status: "Approved JEE",
   },
   {
     sno: 2,
@@ -22,6 +28,7 @@ const tableData = [
     uptoDateExp: "323332332",
     SiteHandOver: "01 Dec 2024",
     EstimateEndDate: "25 Dec 2022",
+    Status: "Approved AE",
   },
   {
     sno: 3,
@@ -31,6 +38,7 @@ const tableData = [
     uptoDateExp: "23121213",
     SiteHandOver: "15 Dec 2023",
     EstimateEndDate: "25 Dec 2022",
+    Status: "Approved EE",
   },
   {
     sno: 4,
@@ -39,6 +47,7 @@ const tableData = [
     uptoDateExp: "54123121",
     SiteHandOver: "15 Dec 2024",
     EstimateEndDate: "25 Dec 2022",
+    Status: "Pending CMD",
   },
   {
     sno: 5,
@@ -47,6 +56,7 @@ const tableData = [
     uptoDateExp: "323313213",
     SiteHandOver: "19 Dec 2022",
     EstimateEndDate: "25 Dec 2022",
+    Status: "Rejected",
   },
 ];
 
@@ -55,6 +65,7 @@ const files = [{}];
 const AllCompanies = ({ companies = [], setRefresh, handleUsersTab }) => {
   const [processedCompanies, setProcessedCompanies] = useState([]);
   const [open, setOpen] = useState(false);
+  const { state } = useContext(AuthContext);
 
   useEffect(() => {
     processCompanies();
@@ -81,6 +92,27 @@ const AllCompanies = ({ companies = [], setRefresh, handleUsersTab }) => {
               onClick={() => setOpen(true)}
             />
           </div>
+
+          {state?.user.userRole === "employee" ? (
+            <>
+              <div>
+                <UilCheckCircle
+                  size={"1.2vw"}
+                  style={{ color: "var(--color-primary)" }}
+                  onClick={() => setOpen(true)}
+                />
+              </div>
+              <div>
+                <UilTimesCircle
+                  size={"1.2vw"}
+                  style={{ color: "var(--color-primary)" }}
+                  onClick={() => setOpen(true)}
+                />
+              </div>
+            </>
+          ) : (
+            <></>
+          )}
         </div>
       ),
     }));
@@ -132,6 +164,7 @@ const AllCompanies = ({ companies = [], setRefresh, handleUsersTab }) => {
           "Upto date Exp",
           "Site Handover",
           "Est End Date",
+          "Status",
           "Action",
         ]}
         keys={[
@@ -141,6 +174,7 @@ const AllCompanies = ({ companies = [], setRefresh, handleUsersTab }) => {
           "uptoDateExp",
           "SiteHandOver",
           "EstimateEndDate",
+          "Status",
           "action",
         ]}
       />

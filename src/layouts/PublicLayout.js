@@ -10,7 +10,7 @@ const getActiveRoute = (userRole) => {
   const processedRoutes =
     userRole === "employee"
       ? PROTECTED_ROUTES_ADMIN
-      : userRole === "user"
+      : userRole === "contractor"
       ? PROTECTED_ROUTES
       : [];
 

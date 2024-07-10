@@ -16,7 +16,7 @@ const MainContainer = ({ title, compoenent: Compoenent }) => {
   const processedFilterRoutes =
     userRole === "employee"
       ? PROTECTED_ROUTES_ADMIN
-      : userRole === "user"
+      : userRole === "contractor"
       ? PROTECTED_ROUTES
       : [];
 

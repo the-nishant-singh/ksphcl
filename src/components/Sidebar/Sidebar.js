@@ -23,7 +23,7 @@ const Sidebar = ({ active, setActive }) => {
   const processedFilterRoutes =
     userRole === "employee"
       ? PROTECTED_ROUTES_ADMIN
-      : userRole === "user"
+      : userRole === "contractor"
       ? PROTECTED_ROUTES
       : [];
 
