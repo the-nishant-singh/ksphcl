@@ -7,21 +7,49 @@ const data = [
     status: "Pending",
     desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
     date: "22 DEC 2023",
+    updatedBY: "JEE",
   },
   {
     status: "Approved",
     desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
     date: "20 DEC 2023",
+    updatedBY: "AE",
   },
   {
     status: "Approved",
     desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
     date: "19 DEC 2023",
+    updatedBY: "EE",
   },
   {
     status: "Approved",
     desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
     date: "18 DEC 2023",
+    updatedBY: "JEE",
+  },
+  {
+    status: "Pending",
+    desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    date: "22 DEC 2023",
+    updatedBY: "JEE",
+  },
+  {
+    status: "Approved",
+    desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    date: "20 DEC 2023",
+    updatedBY: "AE",
+  },
+  {
+    status: "Approved",
+    desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    date: "19 DEC 2023",
+    updatedBY: "EE",
+  },
+  {
+    status: "Approved",
+    desc: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    date: "18 DEC 2023",
+    updatedBY: "JEE",
   },
 ];
 
@@ -36,8 +64,8 @@ const ContractProgress = () => {
       />
       <Table
         data={data}
-        head={["Status", "Description", "Date"]}
-        keys={["status", "desc", "date"]}
+        head={["Status", "Updated By", "Description", "Date"]}
+        keys={["status", "updatedBY", "desc", "date"]}
       />
     </div>
   );

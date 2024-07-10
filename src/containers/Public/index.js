@@ -57,6 +57,7 @@ const Public = () => {
       userRole: "contractor",
     };
     dispatchSetUser({ user, token });
+    history.push("/dashboard");
   };
 
   const handleEmployeeLogin = () => {

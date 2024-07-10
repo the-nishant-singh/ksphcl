@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Typography from "../../components/Typography/Typography";
 import classes from "./index.module.css";
@@ -56,10 +56,23 @@ const Projects = () => {
   const searchParams = new URLSearchParams(search);
   const district = searchParams.get("districtName");
   const { state } = useContext(AuthContext);
-  console.log(state, "state");
   const [open, setOpen] = useState(false);
+  const [currentPosition, setCurrentPosition] = useState({});
 
   const handleFileChange = () => {};
+
+  useEffect(() => {
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const { latitude, longitude } = position.coords;
+        setCurrentPosition({
+          lat: latitude,
+          lng: longitude,
+        });
+      },
+      (err) => console.log("err", err)
+    );
+  }, []);
 
   return (
     <div>
@@ -373,7 +386,9 @@ const Projects = () => {
                       <Input name="Project Code" />
                     </div>
                     <div className="field-container">
-                      <label htmlFor="Scheduled Start Date">Scheduled Start Date</label>
+                      <label htmlFor="Scheduled Start Date">
+                        Scheduled Start Date
+                      </label>
                       <Input name="Scheduled Start Date" />
                     </div>
                   </div>
@@ -383,7 +398,9 @@ const Projects = () => {
                       <Input name="Scheduled End Date" />
                     </div>
                     <div className="field-container">
-                      <label htmlFor="Actual Start Date">Actual Start Date</label>
+                      <label htmlFor="Actual Start Date">
+                        Actual Start Date
+                      </label>
                       <Input name="Actual Start Date" />
                     </div>
                     <div className="field-container">
@@ -441,6 +458,15 @@ const Projects = () => {
                       id="file"
                       multiple="multiple"
                     />
+                  </div>
+                  <div className="field-container">
+                    <label htmlFor="milestone">
+                      Lat: {currentPosition.lat}
+                    </label>
+                    <br />
+                    <label htmlFor="milestone">
+                      Long: {currentPosition.lng}
+                    </label>
                   </div>
                   <div className="buttons-container">
                     <div>
