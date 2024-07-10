@@ -59,7 +59,7 @@ const Fin = () => {
               <Typography content={`Direct Work Expenditure`} size={14} />
             </div>
           </div>
-          
+
           <ReactApexChart
             type="bar"
             options={{
@@ -81,6 +81,29 @@ const Fin = () => {
             series={barChartData2}
             height={300}
           />
+        </div>
+      </div>
+      <div className={`rounded-content-area`} style={{ marginTop: "1vw" }}>
+        <div className="content-header" style={{ marginBottom: '1vw' }}>
+          <Typography content={`Annual Reports`} size={14} />
+        </div>
+        <div className={classes.ReportWrapper}>
+          {Array(24)
+            .fill(0)
+            .map((_, i) => {
+              const year = 2025 - i;
+              return (
+                <div className={classes.Report}>
+                  <img
+                    src="https://www.ksphc.org/images22_23.jpg"
+                    className={classes.ReportImage}
+                  />
+                  <div className={classes.ReportTitle}>
+                    {year}-{year + 1}
+                  </div>
+                </div>
+              );
+            })}
         </div>
       </div>
     </>

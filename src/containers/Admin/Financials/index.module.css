@@ -1,8 +1,30 @@
 .GraphParent {
-    display: flex;
-    gap: 1vw;
+  display: flex;
+  gap: 1vw;
 }
 
 .GraphChild {
-    flex-grow: 1;
+  flex-grow: 1;
+}
+
+.ReportWrapper {
+  display: flex;
+  gap: 1vw;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.Report {
+  width: 10%;
+  cursor: pointer;
+}
+
+.ReportImage {
+  width: 100%;
+}
+
+.ReportTitle {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
 }
