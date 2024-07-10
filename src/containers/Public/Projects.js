@@ -451,12 +451,33 @@ const Projects = () => {
                     </div>
                   </div>
                   <div className="field-container-full-width">
-                    <label htmlFor="upload">Upload Files</label>
+                    <label htmlFor="upload">Upload Bills</label>
                     <FileUpload
-                      name="file"
+                      name="Bills"
                       onChange={handleFileChange}
-                      id="file"
+                      id="Bills"
                       multiple="multiple"
+                      accept=".xls,.xlsx"
+                    />
+                  </div>
+                  <div className="field-container-full-width">
+                    <label htmlFor="upload">Upload Documents </label>
+                    <FileUpload
+                      name="Documents"
+                      onChange={handleFileChange}
+                      id="Documents"
+                      multiple="multiple"
+                      accept=".pdf"
+                    />
+                  </div>
+                  <div className="field-container-full-width">
+                    <label htmlFor="upload">Upload Images of land survey,etc.</label>
+                    <FileUpload
+                      name="Images"
+                      onChange={handleFileChange}
+                      id="Images"
+                      multiple="multiple"
+                      accept=".jpg,.jpeg"
                     />
                   </div>
                   <div className="field-container">
